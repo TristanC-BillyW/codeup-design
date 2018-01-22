@@ -1,17 +1,52 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: "Anton", serif;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 body {
-    text-align: center;
     background: #E6E6E6;
     font-family: "Abel", sans-serif;
 }
 
+hr {
+    border-color: darkgray;
+}
+
+.brand {
+    text-align: center;
+    font-size: 5em;
+}
+
 #nav {
     background: white;
+    text-align: center;
+    margin: 32px 0;
+    height: 60px;
 }
 
 #nav img {
-    width: 105px;
+    margin: -20px auto;
+    background: transparent;
+}
+
+#nav a, #xs-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 4em;
+}
+
+#xs-nav {
+    text-align: center;
+}
+
+.circle {
+    width: 150px;
+    text-transform: uppercase;
+    background: gray;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1em solid white;
 }
