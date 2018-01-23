@@ -11,42 +11,114 @@ body {
 
 hr {
     border-color: darkgray;
+    border-width: 2px;
+    width: 100%;
 }
 
-.brand {
-    text-align: center;
-    font-size: 5em;
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+    .brand {
+        text-align: center;
+        font-size: 4em;
+    }
+
+    #nav {
+        background: white;
+        text-align: center;
+        margin: 32px 0;
+        height: 60px;
+    }
+
+    #nav img {
+        margin: -20px auto;
+        background: transparent;
+    }
+
+    #nav a, #xs-nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+        line-height: 4em;
+    }
+
+    #xs-nav {
+        text-align: center;
+    }
+
+    #circles {
+        margin-bottom: 16px;
+    }
+
+    .circle {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        border: .3em solid white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: white;
+        margin: 16px;
+    }
+
+    .design {
+        background: #E6563B;
+    }
+
+    .develop {
+        background: #EB9D3A;
+    }
+
+    .support {
+        background: #7CB06C;
+    }
+    
+    .host {
+        background: #00ABA9;
+    }
+
+    .card {
+        box-sizing: border-box;
+        margin: 32px;
+    }
+
+    .card > h3 {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 12px;
+        padding: 0;
+    }
 }
 
-#nav {
-    background: white;
-    text-align: center;
-    margin: 32px 0;
-    height: 60px;
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
 }
 
-#nav img {
-    margin: -20px auto;
-    background: transparent;
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
 }
 
-#nav a, #xs-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    line-height: 4em;
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    
+    .content-header {
+        text-align: left;
+    }
 }
 
-#xs-nav {
-    text-align: center;
-}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
 
-.circle {
-    width: 150px;
-    text-transform: uppercase;
-    background: gray;
-    text-align: center;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 1em solid white;
 }
