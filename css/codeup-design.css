@@ -27,42 +27,81 @@ img {
         font-size: 4em;
     }
 
-    #nav {
-        background: white;
+    #xs-nav div {
         text-align: center;
-        margin: 32px 0;
-        height: 60px;
-        width: 100%;
     }
 
-    #nav img {
-        margin: -20px auto;
-        background: transparent;
-        border: none;
-    }
-
-    #nav a, #xs-nav a {
+    #xs-nav a {
         text-decoration: none;
         text-transform: uppercase;
         color: #000;
         line-height: 4em;
     }
 
-    #xs-nav {
+    #nav-flex {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background: white;
         text-align: center;
+        margin: 32px 0;
+        height: 60px;
+        width: 100%;
+        padding: 0;
+    }
+
+    #nav-flex img {
+        margin: -20px auto;
+        background: transparent;
+        border: none;
+    }
+
+    #nav-flex a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+        line-height: 4em;
+    }
+
+    .nav-flex-item:nth-of-type(1) {
+        order: 3;
+    }
+
+    .nav-flex-item:nth-of-type(2) {
+        order: 0;
+        line-height: 60px;
+        font-size: 40px;
+        margin-left: 0;
+    }
+
+    .nav-flex-item:nth-of-type(3) {
+        order: 1;
+    }
+
+    .nav-flex-item:nth-of-type(4) {
+        order: 2;
+    }
+
+    .nav-flex-item:nth-of-type(5) {
+        order: 4;
+    }
+
+    .nav-flex-item:nth-of-type(6) {
+        order: 5;
     }
 
     #circles {
         margin-bottom: 16px;
+        max-width: 100%;
     }
 
     .circle {
         border-radius: 50%;
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
         border: .3em solid white;
         text-transform: uppercase;
-        font-weight: bolder;
+        font-family: "Anton", serif;
         font-size: 1.5em;
         color: white;
         margin: 16px;
@@ -87,45 +126,57 @@ img {
     .card {
         box-sizing: border-box;
         padding: 16px;
-
     }
 
     .card > h5 {
         text-align: left;
         display: inline-block;
-        font-size: .3em;
+    }
+
+    .card > .row:nth-of-type(1) {
+        height: 2em;
     }
 
     .icon {
         width: 18px;
         height: 18px;
+        line-height: 18px;
         border-radius: 50%;
         border: none;
         text-transform: uppercase;
-        font-weight: bolder;
-        font-size: 12px;
+        text-align: center;
+        font-family: "Anton", serif;
+        font-weight: bold;
+        font-size: .8em;
+        display: inline-block;
+        margin: 6% .4em;
         float: right;
-        margin-top: .3em;
+    }
+
+    .fa-twitter  {
+        color: deepskyblue;
+        text-align: left;
+        font-size: 1.5em;
+    }
+
+    .fa-twitter+h5 {
+        display: inline-block;
+    }
+
+    .article img {
+        display: inline-block;
+        margin-bottom: 35px;
+    }
+
+    .article span {
+        font-size: 1.3em;
+        font-weight: bolder;
+        font-family: "Anton", serif;
+        text-transform: uppercase;
+        text-align: left;
     }
 
 }
-
-.fa-twitter  {
-    color: deepskyblue;
-    text-align: left;
-    font-size: 1.5em;
-}
-
-.fa-twitter+h5 {
-    display: inline-block;
-}
-
-.article > img, .article h3 {
-    display: inline-block;
-    text-wrap: normal;
-    margin-bottom: 35px;
-}
-
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
@@ -144,14 +195,36 @@ img {
         text-align: left;
     }
 
-    #nav{
-        display: inline-flex;
+    .nav-flex-item {
+        margin: 0 2em;
+        flex-shrink: 0.1;
+    }
+
+    .nav-flex-item:nth-of-type(1) {
+        order: 1;
+    }
+
+    .nav-flex-item:nth-of-type(2) {
+        order: 2;
+    }
+
+    .nav-flex-item:nth-of-type(3) {
+        order: 3;
+    }
+
+    .nav-flex-item:nth-of-type(4) {
+        order: 4;
+    }
+
+    .nav-flex-item:nth-of-type(5) {
+        order: 5;
+    }
+
+    .nav-flex-item:nth-of-type(6) {
+        order: 6;
     }
 
 }
 
-
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
+@media only screen and (min-width : 1200px) {}
