@@ -73,19 +73,21 @@ hr {
     .support {
         background: #7CB06C;
     }
-    
+
     .host {
         background: #00ABA9;
     }
 
     .card {
         box-sizing: border-box;
-        margin: 32px;
+        padding: 16px;
+
     }
 
-    .card > h3 {
+    .card > h5 {
         text-align: left;
         display: inline-block;
+        font-size: .3em;
     }
 
     .icon {
@@ -96,10 +98,18 @@ hr {
         text-transform: uppercase;
         font-weight: bolder;
         font-size: 12px;
-        padding: 0;
+        float: right;
+        margin-top: .3em;
     }
+
 }
 
+.article > img, .article h3 {
+    display: inline-block;
+    text-wrap: normal;
+    margin-bottom: 35px
+;
+}
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
 
