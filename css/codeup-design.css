@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background: #E6E6E6;
+    background: #f0f0f0;
     font-family: "Abel", sans-serif;
 }
 
@@ -13,6 +13,10 @@ hr {
     border-color: darkgray;
     border-width: 2px;
     width: 100%;
+}
+
+img {
+    border: 6px solid #E6E6E6;
 }
 
 /* Custom, iPhone Retina */ 
@@ -28,11 +32,13 @@ hr {
         text-align: center;
         margin: 32px 0;
         height: 60px;
+        width: 100%;
     }
 
     #nav img {
         margin: -20px auto;
         background: transparent;
+        border: none;
     }
 
     #nav a, #xs-nav a {
@@ -104,12 +110,23 @@ hr {
 
 }
 
+.fa-twitter  {
+    color: deepskyblue;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.fa-twitter+h5 {
+    display: inline-block;
+}
+
 .article > img, .article h3 {
     display: inline-block;
     text-wrap: normal;
-    margin-bottom: 35px
-;
+    margin-bottom: 35px;
 }
+
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
 
@@ -126,7 +143,13 @@ hr {
     .content-header {
         text-align: left;
     }
+
+    #nav{
+        display: inline-flex;
+    }
+
 }
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
