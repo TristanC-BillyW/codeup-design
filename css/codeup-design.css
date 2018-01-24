@@ -63,6 +63,10 @@ img {
         line-height: 4em;
     }
 
+    .nav-flex-item {
+        margin: auto 16px;
+    }
+
     .nav-flex-item:nth-of-type(1) {
         order: 3;
     }
